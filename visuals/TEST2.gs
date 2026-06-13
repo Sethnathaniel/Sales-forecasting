@@ -1,7 +1,7 @@
 // ==========================================
 // CONFIGURATION
 // ==========================================
-const GITHUB_TOKEN = "ghp_2QjLUn3I96ob"; // À remplacer par ton token GitHub
+const GITHUB_TOKEN = "ghp_2QjLUn3ZdxzcDzczcDzddDI96ob"; // À remplacer par ton token GitHub
 
 function doGet() {
   return HtmlService.createTemplateFromFile('Index')
