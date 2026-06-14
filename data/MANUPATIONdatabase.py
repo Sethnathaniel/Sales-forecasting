@@ -8,7 +8,7 @@ def recuperer_utilisateur(user_output):
     # ❌ TEXTE DE TEST VULNÉRABLE (Sera détecté par SecMind)a
     # ==============================================================================
     # Ce code est dangereux car il concatène directement l'entrée utilisateur avec "+"
-    cursor.execute("SELECT * FROM kitchzen WHERE usernames = '" + user_output + "'")
+    cursor.execute("SELECT * FROM kitchzen WHERE username = '" + user_output + "'")
     
     return cursor.fetchall()
 
