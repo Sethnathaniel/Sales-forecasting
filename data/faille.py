@@ -1,0 +1,3 @@
+# Ceci est un test de détection
+
+api_key = "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";
