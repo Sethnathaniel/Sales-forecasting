@@ -5,7 +5,7 @@ def recuperer_utilisateur(user_input):
     cursor = conn.cursor()
     
     # ==============================================================================
-    # ❌ TEXTE DE TEST VULNÉRABLE (Sera détecté par SecMind)
+    # ❌ TEXTE DE TEST VULNÉRABLE (Sera détecté par SecMind)a
     # ==============================================================================
     # Ce code est dangereux car il concatène directement l'entrée utilisateur avec "+"
     cursor.execute("SELECT * FROM users WHERE username = '" + user_input + "'")
