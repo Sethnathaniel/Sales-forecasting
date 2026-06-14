@@ -1,6 +1,6 @@
 import sqlite3
 
-def recuperer_utilisateur(user_input):
+def recuperer_utilisateur(user_output):
     conn = sqlite3.connect('database.db')
     cursor = conn.cursor()
     
@@ -8,7 +8,7 @@ def recuperer_utilisateur(user_input):
     # ❌ TEXTE DE TEST VULNÉRABLE (Sera détecté par SecMind)a
     # ==============================================================================
     # Ce code est dangereux car il concatène directement l'entrée utilisateur avec "+"
-    cursor.execute("SELECT * FROM kitchzen WHERE username = '" + user_input + "'")
+    cursor.execute("SELECT * FROM kitchzen WHERE username = '" + user_output + "'")
     
     return cursor.fetchall()
 
