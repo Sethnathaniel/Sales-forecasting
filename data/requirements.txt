@@ -1,0 +1,9 @@
+# Fichier de test SecMind - versions volontairement anciennes et vulnerables
+# Pour declencher des detections CVE via OSV.dev
+
+requests==2.19.1
+django==2.2.0
+flask==0.12
+pyyaml==5.1
+urllib3==1.24.1
+jinja2==2.10
