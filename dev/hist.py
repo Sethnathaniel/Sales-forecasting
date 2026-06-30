@@ -1,7 +1,7 @@
 """
 Exemple d'agent IA — fichier de DÉMO pour tester la cartographie & gouvernance IA de SecMind.
 Ce code n'est PAS destiné à être exécuté : il contient volontairement des motifs
-(fournisseurs LLM, frameworks d'agents, signaux) que le scanner SecMind détecte.
+(fournisseurs LLM, frameworks d'agents, signaux) que le scanner SecMind détecte.a
 """
 
 # ── Fournisseurs LLM ────────────────────────────────────────────────
