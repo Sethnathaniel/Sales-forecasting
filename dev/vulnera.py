@@ -30,7 +30,14 @@ GITHUB_PAT = "github_pat_11BLKNDNY00GcFLqA749aI_NAvELs7zNPdfQ_R54ZlsrQnbsOTY2der
 # -----------------------------------------------
 # FAILLE 4 : Clé Stripe Live exposée (CRITICAL)
 # -----------------------------------------------
-STRIPE_KEY = "sk_live_abcdefghijklmnopqrstuvwx"
+import os
+
+# Récupération de la clé depuis une variable d'environnement
+STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY')
+
+# Vérification que la clé est bien définie
+if not STRIPE_SECRET_KEY:
+    raise ValueError("La clé secrète Stripe n'est pas configurée dans les variables d'environnement")
 
 # -----------------------------------------------
 # FAILLE 5 : Injection SQL (CRITICAL)
