@@ -9,7 +9,19 @@ import requests
 # -----------------------------------------------
 # FAILLE 1 : Clé AWS exposée (CRITICAL)
 # -----------------------------------------------
-AWS_ACCESS_KEY = "AKIA1234567890ABCDEF"
+import os
+import boto3
+
+# Récupération sécurisée de la clé depuis les variables d'environnement
+aws_access_key_id = os.getenv('AWS_ACCESS_KEY_ID')
+aws_secret_access_key = os.getenv('AWS_SECRET_ACCESS_KEY')
+
+# Initialisation du client AWS avec les variables sécurisées
+client = boto3.client(
+    'service_name',
+    aws_access_key_id=aws_access_key_id,
+    aws_secret_access_key=aws_secret_access_key
+)
 AWS_SECRET = "wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY"
 
 # -----------------------------------------------
